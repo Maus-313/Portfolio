@@ -1,0 +1,35 @@
+[debug] [2024-07-22T11:01:19.342Z] ----------------------------------------------------------------------
+[debug] [2024-07-22T11:01:19.346Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\umar8\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-07-22T11:01:19.347Z] CLI Version:   13.13.2
+[debug] [2024-07-22T11:01:19.347Z] Platform:      win32
+[debug] [2024-07-22T11:01:19.347Z] Node Version:  v20.6.1
+[debug] [2024-07-22T11:01:19.347Z] Time:          Mon Jul 22 2024 16:31:19 GMT+0530 (India Standard Time)
+[debug] [2024-07-22T11:01:19.347Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-22T11:01:19.493Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-22T11:01:19.493Z] > authorizing via signed-in user (u0699522@gmail.com)
+[debug] [2024-07-22T11:01:19.494Z] [iam] checking project portfolio-91c76 for permissions ["firebase.projects.get"]
+[debug] [2024-07-22T11:01:19.495Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-91c76:testIamPermissions [none]
+[debug] [2024-07-22T11:01:19.495Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-91c76:testIamPermissions x-goog-quota-user=projects/portfolio-91c76
+[debug] [2024-07-22T11:01:19.496Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-91c76:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-22T11:01:21.310Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-91c76:testIamPermissions 200
+[debug] [2024-07-22T11:01:21.311Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-91c76:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-22T11:01:21.311Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-91c76 [none]
+[debug] [2024-07-22T11:01:22.131Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-91c76 200
+[debug] [2024-07-22T11:01:22.131Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-91c76 {"projectId":"portfolio-91c76","projectNumber":"369339887553","displayName":"Portfolio","name":"projects/portfolio-91c76","resources":{"hostingSite":"portfolio-91c76"},"state":"ACTIVE","etag":"1_d0a2505b-4458-409a-bfe9-7016707b0971"}
+[info] 
+[info] === Serving from 'C:\MEGA\MEGAsync\UNIVERSITY\Web\portfolio'...
+[info] 
+[debug] [2024-07-22T11:01:22.137Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-91c76/sites 
+[debug] [2024-07-22T11:01:23.838Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-91c76/sites 200
+[debug] [2024-07-22T11:01:23.838Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-91c76/sites {"sites":[{"name":"projects/portfolio-91c76/sites/portfolio-91c76","defaultUrl":"https://portfolio-91c76.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-07-22T11:01:23.839Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-91c76/webApps/-/config [none]
+[debug] [2024-07-22T11:01:24.857Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-91c76/webApps/-/config 200
+[debug] [2024-07-22T11:01:24.858Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-91c76/webApps/-/config {"projectId":"portfolio-91c76","storageBucket":"portfolio-91c76.appspot.com","apiKey":"AIzaSyBnKQZHJZKWhuP2OsGra7Q4i-kn6XfdfQQ","authDomain":"portfolio-91c76.firebaseapp.com","messagingSenderId":"369339887553"}
+[debug] [2024-07-22T11:01:24.911Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-91c76 [none]
+[debug] [2024-07-22T11:01:25.544Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-91c76 200
+[debug] [2024-07-22T11:01:25.544Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-91c76 {"projectId":"portfolio-91c76","projectNumber":"369339887553","displayName":"Portfolio","name":"projects/portfolio-91c76","resources":{"hostingSite":"portfolio-91c76"},"state":"ACTIVE","etag":"1_d0a2505b-4458-409a-bfe9-7016707b0971"}
+[info] i  hosting[portfolio-91c76]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[portfolio-91c76]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [22/Jul/2024:11:01:41 +0000] "GET / HTTP/1.1" 200 757 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Jul/2024:11:01:41 +0000] \"GET / HTTP/1.1\" 200 757 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [22/Jul/2024:11:01:42 +0000] "GET / HTTP/1.1" 200 757 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [22/Jul/2024:11:01:42 +0000] \"GET / HTTP/1.1\" 200 757 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
