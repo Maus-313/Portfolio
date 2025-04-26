@@ -423,3 +423,58 @@ footer{
 footer p{
     text-align: center;
 }
+
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.profile-image {
+    max-height: 400px;
+    width: auto;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.project-container{
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.project-heading{
+    display: flex;
+    justify-content: center;
+}
+
+.project-button{
+
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.project-button:hover {
+    background-color: grey;
+    transform: scale(1.05);
+}
+
+.android-project{
+    background-color: rgba(89, 87, 87, 0.285);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+}
+.android-project-images{
+    height: 400px;
+}

@@ -25,9 +25,9 @@
         margin-top: 2rem;
     }
 
-    #profile,.section-container{
+    /* #profile,.section-container{
         display: block;
-    }
+    } */
 
     .arrow{
         display: none;
@@ -59,6 +59,8 @@
     }
 
     #profile{
+        display: flex;
+        flex-direction: column;
         height: 83vh;
         margin-bottom: 0;
     }
