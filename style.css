@@ -9,6 +9,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    background-color: rgb(235, 235, 235);
 }
 
 html {
@@ -447,6 +448,8 @@ footer p {
     display: flex;
     gap: 10px;
     flex-direction: column;
+    align-items: center;
+    margin: 10px;
 }
 
 .project-heading {
@@ -476,13 +479,36 @@ footer p {
 }
 
 .android-project {
-    background-color: rgba(255, 0, 0, 0.046);
+    background-color: rgb(255, 255, 255);
     display: flex;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.252);
     align-items: normal;
     justify-content: space-around;
+    /* width: 60%; */
+    position: relative;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.android_backgroundLayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    background-image: url("./assets/android_project_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+
+    filter: brightness(100%) contrast(100%) saturate(100%) blur(5px);
+
 }
 
 .android-project-images {
@@ -496,7 +522,8 @@ footer p {
 }
 
 .project-details-left {
-    width: 70%;
+    /* width: 70%; */
+    margin: 10px;
     padding: 10px;
     background-color: rgba(255, 0, 0, 0);
 }
@@ -514,9 +541,16 @@ footer p {
     margin-top: 10px;
 }
 
+.android-project>.project-details-left {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.android-project>.project-details-right {
+    background-color: rgba(255, 0, 0, 0);
+}
+
 .web-project {
     display: flex;
-    margin-bottom: 40px;
     padding-left: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -528,4 +562,9 @@ footer p {
     /* Make image responsive */
     height: auto;
     border-radius: 5px;
+}
+
+.android_Project_Section {
+    display: flex;
+    gap: 10px;
 }
