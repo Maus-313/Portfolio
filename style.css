@@ -159,6 +159,7 @@ section {
 
 .section-container {
     display: flex;
+    flex-direction: column;
 }
 
 /* PROFILE SECTION */
@@ -475,6 +476,7 @@ footer p {
 
 .project-button:hover {
     background-color: grey;
+    color: white;
     transform: scale(1.05);
 }
 
@@ -567,4 +569,15 @@ footer p {
 .android_Project_Section {
     display: flex;
     gap: 10px;
+}
+
+.android-projects-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.android-projects-details li {
+    margin-left: 40px;
 }
